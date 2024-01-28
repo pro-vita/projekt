@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a id="nazev" href="#">PojištěníApp</a></li>
+        <li><a class="volba" href="#">Pojištěnci</a></li>
+        <li><a class="volba" href="#">O aplikaci</a></li>
+        <li><a class="volba" href="#">O nás</a></li>
+      </ul>
+    </header>
+    <div id="container">
+      <section id="section1">
+        <div>
+          <h2>Pojištěnci</h2>
+        </div>
+        <table id="table1">
+          <thead>
+            <th class="td1">Jméno a Příjmení</th>
+            <th class="td2">Telefonní číslo</th>
+            <th class="td3">Věk</th>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+      <section id="section2">
+        <div class="grid-container">
+          <div class="item1">
+            <h2>Nový pojištěnec</h2>
+          </div>
+          <div class="item2">
+            <p class="submitError"></p>
+          </div>
+          
+        </div>
+        <div>
+          <img id="avatar" src="obrazky/avatar-man.png" alt="avatar" />
+          <form class="form">
+            <div class="input-group">
+              <label for="jmeno">Jméno</label>
+              <input type="text" id="jmeno" name="jmeno" placeholder="Jméno" />
+              <label for="vek">Věk</label>
+              <input type="text" id="vek" name="vek" placeholder="Věk" />
+            </div>
+            <div class="input-group">
+              <label for="prijmeni">Příjmení</label>
+              <input
+                type="text"
+                id="prijmeni"
+                name="prijmeni"
+                placeholder="Příjmení"
+              />
+              <label for="telefon">Telefon</label>
+              <input
+                type="text"
+                id="telefon"
+                name="telefon"
+                placeholder="Telefon"
+              />
+            </div>
+            <button id="ulozit" type="submit">Uložit</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <div class="time"></div>
+    <footer>&copy; pro-vita 2024</footer> 
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
